@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    </head>
+    <style>
+        table,tr,td {
+            background-color:#DCD0FF;
+            border:2px solid black;
+            border-radius:3px;
+            border-collapse: collapse;
+        }
+        h2 {
+            background-color: #D58A94;
+        }
+        .feedback {
+            border: 0ch;
+            bottom: auto;
+            background-color: yellowgreen;
+            border-collapse: collapse;
+        }
+    </style> 
+    <body bgcolor="#EBF4FA" align="center" leftmargin="10px" rightmargin="10px" topmargin="10px" bottommargin="10px">
+        <h2>
+            Login Form 
+        </h2>
+        <table width="30%" align="center" cellspacing="0" cellpadding="2" style="background-color:#157DEC;">
+            <tr>
+                <td colspan="2">
+                    <strong>Login</strong>
+                </td>
+            </tr>   
+            <tr>
+                <td width="10%">
+                    <label for="usrname">Username:</label>
+                </td>
+                <td width="20%">
+                    <input type="text" id="usrname" name="usrname" size="40" placeholder="Username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pawd">Password:</label>
+                </td>
+                <td>
+                    <input type="text" id="pawd" name="pawd" size="40" placeholder="Password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <small>Forgot Password?</small>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="login">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <small>Not a member? sing up</small>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <h2>
+            Sing Up Form 
+        </h2>
+        <table align="center" width="30%">
+            <tr>
+                <td colspan="2">
+                    <strong>Sing Up</strong>
+                </td>
+            </tr>
+            <tr>
+                <td width="center" align="center">
+                    <input type="text" name="fstname" placeholder="First Name" size="20">
+                </td>
+                <td width="center" align="center">
+                    <input type="text" name="lstname" placeholder="Last Name" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="email" name="mailid" placeholder="Email" size="47">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="password" name="pswd" formmethod="post" placeholder="Password" size="47>"
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="password" name="cnfmpswd" formmethod="post" placeholder=" Confirm Password" size="47>"
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="left">
+                    <input type="checkbox" name="t&c" value="I acccept the terms and condition">
+                    <lable>I acccept the Terms & condition</lable>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" width="10px">
+                    <input type="submit" value="Sing Up">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <h2>
+            Registration Form
+        </h2>
+        <table width="50%" align="center">
+            <tr>
+                <td colspan="2">
+                    <strong>
+                        Farmer Registration Form
+                    </strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="fstname" placeholder="First Name" size="35">
+                </td>
+                <td>
+                    <input type="text" name="lstname" placeholder="Last Name" size="35">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="email" name="emailid" placeholder="Email" size="80">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="product">Product</label>
+                </td>
+                <td>
+                    <select id="product" name="productname">
+                        <option value="Rice">Rice</option>
+                        <option value="Vegitable">Vegitable</option>
+                        <option value="Fruits">Fruits</option>
+                        <option value="Groundnut">Groundnut</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="Dairy Products">Dairy Products</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" name="cntrname" placeholder="Center Name" size="80>"
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cntrnumber">Center Number</label>
+                </td>
+                <td>
+                    <input type="number" id="cntrnumber" name="cntrnumber" placeholder="Center Number" size="80 max="25" min="0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phnnumber">Phone number</label>
+                </td>
+                <td>
+                    <input type="tel" id="phnnumber" name="phnnumber" placeholder="Phone number" pattern="[0-9]{10}">
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="5">
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <input type="text" name="doornumber" placeholder="Door Number" size="35">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="streetname" placeholder="Street Name" size="35">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="region" placeholder="Region" size="35">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="dist" placeholder="District" size="35">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="code" placeholder="Pincode" size="6" maxlength="6">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="SUBMIT">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <h2>    
+            Booking Form
+        </h2>
+        <table width="50%" align="center">
+            <tr>
+                <td colspan="3">
+                    <strong>
+                        Hotel Booking Form
+                    </strong>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    Name*
+                </td>
+                <td align="left">
+                    <input type="text" name="fstname" placeholder="First Name" size="25">
+                </td>
+                <td align="left">
+                    <input type="text" name="lstname" placeholder="Last Name" size="25">
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    E-mail*
+                </td>
+                <td colspan="2" align="left">
+                    <input type="email" name="mailid" placeholder="Email" size="59">
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <label for="roomtype">Room Type</label>
+                </td>
+                <td colspan="2" align="left">
+                    <select id="roomtype" name="roomtype">
+                        <option value="Standard Room">Standard Room (1 to 2 people)</option>
+                        <option value="Family Room">Family Room (1 to 4 people)</option>
+                        <option value="Private Room">Private Room (1 to 3 people)</option>
+                        <option value="Mix Dorm Room">Mix Dorm Room (6 people)</option>4
+                        <option value="Female Dorm Room">Female Dorm Room (6 people)</option>
+                        <option value="Male Dorm Room">Male Dorm Room (6 people)</option>
+                     </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    number of guests*   
+                </td>
+                <td colspan="2" align="left">
+                    <input type="number" name="noofguest" min="1" max="6">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Arrival Date*
+                </td>
+                <td colspan="2" align="left">
+                    <input type="datetime-local" name="arrivaltime">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Depature Date*
+                </td>
+                <td colspan="2" align="left">
+                    <input type="datetime-local" name="arrivaltime">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Special Requests
+                </td>
+                <td colspan="2">
+                    <textarea name="message" style="width:400px; height:200px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="SUBMIT">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <table width="30%" align="center">
+            <tr>
+                <td colspan="2">
+                    <strong>
+                       BOOK CAB NOW
+                    </strong> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td align="left">
+                    <input type="text" name="txtname" placeholder="Your Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone Number:
+                </td>
+                <td align="left">
+                    <input type="tel" name="phonenumber" placeholder="Phone Number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pickup Location:
+                </td>
+                <td align="left">
+                    <input type="text" name="pickuplocation" placeholder="Pickup Location">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Drop Location:
+                </td>
+                <td align="left">
+                    <input type="text" name="droplocation" placeholder="Drop Location">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Date & Time:
+                </td>
+                <td align="left">
+                    <input type="datetime-local" name="datetime" placeholder="Date & Time">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Choose Vechicle:
+                </td>
+                <td align="left">
+                    <input type="radio" id="vechicle1" name="vechicle" value="Tata Tiago">
+                    <label for="vechicle1">Tata Tiago</label><br>
+                    <input type="radio" id="vechicle2" name="vechicle" value="Cruze">
+                    <label for="vechicle2">Cruze</label><br>
+                    <input type="radio" id="vechicle3" name="vechicle" value="Swift">
+                    <label for="vechicle3">Swift</label><br>
+                    <input type="radio" id="vechicle4" name="vechicle" value="Mahindra XUV700">
+                    <label for="vechicle4">Mahindra XUV700</label><br>
+                    <input type="radio" id="vechicle5" name="vechicle" value="Renault Kiger">
+                    <label for="vechicle5">Renault Kiger</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Book My Cab">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <table width="50%" align="center">
+            <tr>
+                <td colspan="2">
+                    <strong>
+                        BUS BOOKING FORM
+                    </strong>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <input type="text" name="pickuppoint" placeholder="Pickup Point" size="40">
+                </td>
+                <td width="25%">
+                    <input type="text" name="droppoint" placeholder="Drop Point" size="40">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Number of Passengers:
+                </td>
+                <td align="left">
+                    <input type="number" name="noofpsngr" min="1" max="52">
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="6">
+                    Passenger's Name:
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="psngrname1" placeholder="Passenger Name 1" size="40"><br>
+                </td>
+            <tr>
+                <td>
+                    <input type="text" name="psngrname2" placeholder="Passenger Name 2" size="40"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="psngrname3" placeholder="Passenger Name 3" size="40"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="psngrname4" placeholder="Passenger Name 4" size="40"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="psngrname5" placeholder="Passenger Name 5" size="40"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone Number:
+                </td>
+                <td align="left">
+                    <input type="tel" name="phnumber" min="0" max="9" pattern="[0-9]{10}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E-mail:
+                </td>
+                <td align="left">
+                    <input type="email" name="mailid" placeholder="E-mail" size="40">
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    ID Proof
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <input type="radio" id="aadhar" name="idprrof" value="aadhar">
+                    <label for="aadhar">Aadhar</label>
+                    <input type="radio" id="drivinglicence" name="idprrof" value="drivinglicence">
+                    <label for="drivinglicence">Driving Licence</label>
+                    <input type="radio" id="voteid" name="idprrof" value="voteidr">
+                    <label for="voteid">Vote ID</label>
+                    <input type="radio" id="pan" name="idprrof" value="pan">
+                    <label for="pan">PAN Card</label>
+                    <input type="radio" id="govermentid" name="idprrof" value="govermentid">
+                    <label for="govermentid">Goverment ID</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ID Number:
+                </td>
+                <td>
+                    <input type="text" name="idnum" placeholder="ID Number" size="40">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="SUBMIT">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <h2>
+            KYC FORM
+        </h2>
+        <table  width="50%" align="center">
+            <tr>
+                <td colspan="3">
+                    <strong>
+                        KYC FORM
+                    </strong>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    A.Identity Details
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    Name of applicant:
+                </td>
+                <td align="left">
+                    <input type="text" name="fstname" placeholder="First Name" size="30">
+                </td>
+                <td align="left">
+                    <input type="text" name="lstname" placeholder="Last Name" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    Father's/Spouse's Name:
+                </td>
+                <td align="left">
+                    <input type="text" name="fstname" placeholder="First Name" size="30">
+                </td>
+                <td align="left">
+                    <input type="text" name="lstname" placeholder="Last Name" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td colspan="2" align="left"> 
+                    <input type="radio" id="gender" name="name" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="gender" name="name" value="female">
+                    <label for="male">Female</label><br>
+                    <input type="radio" id="gender" name="name" value="others">
+                    <label for="male">Others</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Marital Status:
+                </td>
+                <td colspan="2" align="left"> 
+                    <input type="radio" id="maritalstatus" name="maritalstatus" value="single">
+                    <label for="maritalstatus">Single</label><br>
+                    <input type="radio" id="maritalstatusr" name="maritalstatus" value="married">
+                    <label for="maritalstatus">Married</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date of Birth:
+                </td>
+                <td colspan="2" align="left">
+                    <input type="date" name="DOB" placeholder="DD-MM-YYYY">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nationality">Nationality:</label>
+                </td>
+                <td colspan="2" align="left">
+                    <select id="nationality" name="nationality">
+                        <option value="india">India</option>
+                        <option value="USA">USA</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="srilanka">Srilanka</option>
+                        <option value="australia">Australia</option>
+                        <option value="newzeland">New Zeland</option>
+                        <option value="england">England</option>
+                        <option value="westindies">West Indies</option>
+                        <option value="africa">Africa</option>
+                        <option value="singapour">Singapour</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Status:
+                </td>
+                <td colspan="2" align="left"> 
+                    <input type="radio" id="residentstatus" name="residentstatus" value="residentindividual">
+                    <label for="residentstatus">Resident Individual</label><br>
+                    <input type="radio" id="residentstatus" name="residentstatus" value="nonresident">
+                    <label for="residentstatus">Non Resident</label><br>
+                    <input type="radio" id="residentstatus" name="residentstatus" value="foreignnational">
+                    <label for="residentstatus">Foreign National</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PAN:
+                </td>
+                <td colspan="2" align="left">
+                    <input type="tel" name="pannumber" formmethod="post" placeholder="PAN Number">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    B.Address Details
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address for Correspondence:
+                </td>
+                <td colspan="2" align="left">
+                    <input type="text" name="streetaddress" placeholder="Street Address" size="50"><br>
+                    <input type="text" name="streetaddressline2" placeholder="Street Address Line 2" size="50"><br>
+                    <input type="text" name="city" placeholder="City" size="50"><br>
+                    <input type="text" name="state" placeholder="State" size="50"><br>
+                    <input type="tel" name="pincode" placeholder="622003" size="50" pattern="[0-9]{6}"><br>
+                    <input type="text" name="country" placeholder="Country" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone Number:
+                </td>
+                <td colspan="2" align="left">
+                    <input type="tel" name="phnnumber" pattern="[0-9]{3}{4}{3}" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E-Mail
+                </td>
+                <td colspan="2" align="left">
+                    <input type="email" name="mailid" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Proof of Address to be Provided by Applicant:
+                </td>
+                <td colspan="2" align="left">
+                    <input type="checkbox" id="passport" name="idproof" value="passport">
+                    <label for="passport">Pass Port</label><br>
+                    <input type="checkbox" id="drivinglicense" name="idproof" value="drivinglicense">
+                    <label for="passport">Driving License</label><br>
+                    <input type="checkbox" id="rationcard" name="idproof" value="rationcard">
+                    <label for="passport">Ration Card</label><br>
+                    <input type="checkbox" id="gasbill" name="idproof" value="gasbill">
+                    <label for="passport">Gas  Bill</label><br>
+                    <input type="checkbox" id="electricitybill" name="idproof" value="electricitybill">
+                    <label for="passport">Electricity Bill</label><br>
+                    <input type="checkbox" id="others" name="idproof" value="others">
+                    <label for="passport">Others</label>              
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    C.File Upload
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    File to Upload:
+                </td>
+                <td colspan="2" align="left">
+                    <input type="file" name="filetouplaod">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    D.Declaration
+                </td>
+            <tr>
+                <td colspan="3" align="left">
+                    <input type="checkbox" name="decleration" value="decleration">
+                    hereby declare that the information provided in this form is accurate and complete. 
+                    I confirm that any information is found incorrect and/or incomplete that leads a violation 
+                    of regulations may initiate legal actions, and I accept that I am the responsible party 
+                    for any and all charges, penalties and violations. 
+                </td>
+            </tr>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="submit" value="SUBMIT">
+            </td>
+        </tr>  
+    </table>
+    <br>
+        <br>
+        <hr>
+    <h2>
+        FILE DOWNLOAD FORM
+    </h2>
+    <table width="40%" align="center">
+        <tr>
+            <td colspan="3">
+                <strong>
+                    File Download Form
+                </strong>
+            </td>]
+        </tr>
+        <tr>
+            <td width="30%">
+                Name:
+            </td>
+            <td>
+                <input type="text" name="fstname" placeholder="First Name" size="25">
+            </td>
+            <td>
+                <input type="text" name="fstname" placeholder="First Name" size="25">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                E-Mail:
+            </td>
+            <td colspan="2" align="left">
+                <input type="email" name="mailid" placeholder="E-Mail" size="50">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone Number:
+            </td>
+            <td colspan="2" align="left">
+                <input type="tel" name="phnnumber" pattern="[0-9]{3}{4}{3}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                OTO<br>
+                <small>(OTP sent to registered mobile number)</small>
+            </td>
+            <td colspan="2">
+                <input type="tel" name="otpnumber" formmethod="post" pattern="[0-9]{6}"><br>
+                <small>Resent OTP</small>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="submit" value="SUBMIT">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <hr>
+        <h2>
+            PAYMENT FORM
+        </h2>
+    <table width="40%" align="center">
+        <tr>
+            <td colspan="3">
+                <strong>
+                    PAYMENT FORM
+                </strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Payment Method
+            </td>
+            <td align="left" colspan="2">
+                <input type="radio" id="debitcard" name="method" value="debitcard">
+                <label for="debitcard">Debit Card</label><br>
+                <input type="radio" id="creditcard" name="method" value="creditcard">
+                <label for="creditcard">Credit Card</label><br>
+                <input type="radio" id="upi" name="method" value="upi">
+                <label for="upi">UPI Payment</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Name of the Card Holder:
+            </td>
+            <td align="left">
+                <input type="text" name="fstname" placeholder="First Name">
+            </td>
+            <td align="left">
+                <input type="text" name="lstname" placeholder="Last Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Card Number:
+            </td>
+            <td align="left" colspan="2">
+                <input type="text" name="cardnumber" placeholder="Card Number" formmethod="post" pattern="[0-9]{4}{4}{4}">   
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CVV:
+            </td>
+            <td align="left" colspan="2">
+                <input type="text" name="cvv" placeholder="CVV" formmethod="post" pattern="[0-9]{3}">   
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Expire Date:
+            </td>
+            <td align="left" colspan="2">
+                <input type="month" name="expiredate" placeholder="Expire Date" formmethod="post">   
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="submit" value="SUBMIT">
+            </td>
+        </tr>
+    </table> 
+    <br>
+    <br>
+    <hr>
+        <h2>
+            APPLICATION FORM
+        </h2>
+    <table width="50%" align="center">
+        <tr>
+            <td colspan="3">
+                <strong>
+                    School Application Form
+                </strong>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                    A.Personal Details
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">
+                Name:
+            </td>
+            <td align="left">
+                <input type="text" name="fstname" placeholder="First Name" size="30">
+            </td>
+            <td align="left">
+                <input type="text" name="lstname" placeholder="Last Name" size="30">
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">
+                Father's/Spouse's Name: 
+            </td>
+            <td align="left">
+                <input type="text" name="fstname" placeholder="First Name" size="30">
+            </td>
+            <td align="left">
+                <input type="text" name="lstname" placeholder="Last Name" size="30">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender:
+            </td>
+            <td colspan="2" align="left"> 
+                <input type="radio" id="gender" name="name" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="gender" name="name" value="female">
+                <label for="male">Female</label><br>
+                <input type="radio" id="gender" name="name" value="others">
+                <label for="male">Others</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Date of Birth:
+            </td>
+            <td colspan="2" align="left">
+                <input type="date" name="DOB" placeholder="DD-MM-YYYY">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="nationality">Nationality:</label>
+            </td>
+            <td colspan="2" align="left">
+                <select id="nationality" name="nationality">
+                    <option value="india">India</option>
+                    <option value="USA">USA</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="srilanka">Srilanka</option>
+                    <option value="australia">Australia</option>
+                    <option value="newzeland">New Zeland</option>
+                    <option value="england">England</option>
+                    <option value="westindies">West Indies</option>
+                    <option value="africa">Africa</option>
+                    <option value="singapour">Singapour</option>
+                </select>
+            </td>
+        </tr> 
+        <tr>
+            <td colspan="3">
+                    B.Education Details
+            </td>
+        </tr>
+        <tr>
+            <td>
+                standard of complition:
+            </td>
+            <td colspan="2" align="left">
+                <input type="number" name="stdcompleted" min="1" max="12">
+            </td>
+        </tr> 
+        <tr>
+            <td>
+                Medium of complition:
+            </td>
+            <td colspan="2" align="left">
+                <input type="radio" id="tamil" name="mdmcompleted" value="tamil">
+                <label for="tamil">Tamil</label><br>
+                <input type="radio" id="english" name="mdmcompleted" value="english">
+                <label for="english">English</label><br>
+                <input type="radio" id="cbsc" name="mdmcompleted" value="cbsc">
+                <label for="cbsc">CBSC</label>
+            </td>
+        </tr> 
+        <tr>
+            <td>
+                Last year mark:
+            </td>
+            <td colspan="2" align="left">
+                <input type="number" name="mark" min="1" max="500">
+            </td>
+        </tr> 
+        <tr>
+            <td>
+                Prefered Course:
+            </td>
+            <td colspan="2" align="left">
+                <input type="text" name="course" placeholder="Prefered Course" size="50">
+            </td>
+        </tr> 
+        <tr>
+            <td colspan="3">
+                    C.Contact Details
+            </td>
+        <tr>
+            <td>
+                Address:
+            </td>
+            <td colspan="2" align="left">
+                <input type="text" name="streetaddress" placeholder="Street Address" size="50"><br>
+                <input type="text" name="streetaddressline2" placeholder="Street Address Line 2" size="50"><br>
+                <input type="text" name="city" placeholder="City" size="50"><br>
+                <input type="text" name="state" placeholder="State" size="50"><br>
+                <input type="tel" name="pincode" placeholder="622003" size="50" pattern="[0-9]{6}"><br>
+                <input type="text" name="country" placeholder="Country" size="50">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone Number:
+            </td>
+            <td colspan="2" align="left">
+                <input type="tel" name="phnnumber" pattern="[0-9]{3}{4}{3}" size="50">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                E-Mail
+            </td>
+            <td colspan="2" align="left">
+                <input type="email" name="mailid" size="50">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Do you want to indicate any related information?
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <textarea type="message" rows="10" cols="80" placeholder="write a feedback\requirement"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="submit" value="SUBMIT">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <hr>
+    <h2>
+        CONTACT FORM
+    </h2>
+    <table width="50%" align="center">
+        <tr>
+            <td colspan="2">
+                <strong>
+                    Get In Touch
+                </strong> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="fstname" placeholder="First Name" size="40">
+            </td>
+            <td>
+                <input type="text" name="lstname" placeholder="Last Name" size="40">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="email" name="mailid" placeholder="E-Mail" size="91">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="tel" name="phnum" placeholder="Phone Number" size="91">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea type="text" name="message" placeholder="Type Your Message Here....." rows="10" cols="85"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="SUBMIT">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <strong>
+                    Thanks for Submiting!
+                </strong>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <hr>
+    <h2>
+        EXAM REGISTARTION FORM
+    </h2>
+    <table width="50%" align="center">
+        <tr>
+            <td  colspan="3">
+                <strong>
+                    Registration Form
+                </strong> 
+            </td>
+        </tr>
+        <tr>
+            <td width="40%">
+                Student Name:
+            </td>
+            <td>
+                <input type="text" name="fstname" placeholder="First Name" size="30">
+            </td>
+            <td>
+                <input type="text" name="lstname" placeholder="Last Name" size="30">
+            </td>
+        </tr>
+        <tr>
+            <td width="40%">
+                Student Registration number:
+            </td>
+            <td align="left" colspan="2">
+                <input type="text" name="registrationnumber" maxlength="12" placeholder="Registration Number">
+            </td>
+        </tr>
+        <tr>
+            <td width="40%">
+                Registered course:
+            </td>
+            <td align="left" colspan="2">
+                <input type="text" name="registredcourse" placeholder="Course with Code">
+            </td>
+        </tr>
+        <tr>
+            <td width="40%">
+                Exam Start's:
+            </td>
+            <td align="left" colspan="2">
+                <input type="datetime-local" name="starttime">
+            </td>
+        </tr>
+        <tr>
+            <td width="40%">
+                Exam End's:
+            </td>
+            <td align="left" colspan="2">
+                <input type="datetime-local" name="endtime">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <textarea type="text" name="message" placeholder="Type Your Comments" rows="10" cols="80"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="submit" value="SUBMIT">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <strong>
+                    Thanks for Register!
+                </strong>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <hr>
+    <h2>
+        FEED BACK FORM
+    </h2>
+    <table class="feedback" width="50%" align="center">
+        <tr>
+            <td colspan="2">
+                Feed Back Form
+            </td>
+        </tr>
+        <tr>
+            <td width="50%">
+                Feedbcak Type
+            </td>
+            <td align="left">
+                <input type="radio" id="feedback" name="feedbacktype" value="feedback">
+                <label for="feedback">Feed Back</label><br>
+                <input type="radio" id="suggesions" name="feedbacktype" value="suggesions">
+                <label for="suggesions">Suggesions</label><br>
+                <input type="radio" id="questions" name="feedbacktype" value="questions">
+                <label for="questions">Questions</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea type="text" name="message" placeholder="write here....." rows="10" cols="80"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text" name="name" placeholder="Name" size="40">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                E-Mail:
+            </td>
+            <td>
+                <input type="email" name="mailid" placeholder="E-Mail" size="40">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="submit" value="SUBMIT FEEDBACK">
+            </td>
+        </tr>
+    </table>
+    </body>
+</html>
